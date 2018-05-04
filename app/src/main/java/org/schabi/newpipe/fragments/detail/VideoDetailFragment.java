@@ -159,6 +159,7 @@ public class VideoDetailFragment
     private TextView detailControlsDownload;
     private TextView appendControlsDetail;
     private TextView detailDurationView;
+    private TextView detailControlsDonationView;
 
     private LinearLayout videoDescriptionRootLayout;
     private TextView videoUploadDateView;
@@ -470,6 +471,7 @@ public class VideoDetailFragment
         detailControlsPopup = rootView.findViewById(R.id.detail_controls_popup);
         detailControlsAddToPlaylist = rootView.findViewById(R.id.detail_controls_playlist_append);
         detailControlsDownload = rootView.findViewById(R.id.detail_controls_download);
+        detailControlsDonationView = rootView.findViewById(R.id.detail_controls_donate);
         appendControlsDetail = rootView.findViewById(R.id.touch_append_detail);
         detailDurationView = rootView.findViewById(R.id.detail_duration_view);
 
@@ -1222,8 +1224,17 @@ public class VideoDetailFragment
             // Only auto play in the first open
             autoPlayEnabled = false;
         }
+
+        if(info.getDonationLinks().length > 0) {
+            handleDonationLinks(info.getDonationLinks());
+        } else {
+            detailControlsDonationView.setVisibility(View.GONE);
+        }
     }
 
+    private void handleDonationLinks(String[] links) {
+
+    }
 
     public void openDownloadDialog() {
             try {

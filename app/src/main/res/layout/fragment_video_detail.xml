@@ -332,7 +332,7 @@
                         <TextView
                             android:id="@+id/detail_controls_playlist_append"
                             android:layout_width="80dp"
-                            android:layout_height="55dp"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:background="?attr/selectableItemBackgroundBorderless"
@@ -349,7 +349,7 @@
                         <TextView
                             android:id="@+id/detail_controls_background"
                             android:layout_width="80dp"
-                            android:layout_height="55dp"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:background="?attr/selectableItemBackgroundBorderless"
@@ -360,13 +360,13 @@
                             android:gravity="center"
                             android:paddingBottom="6dp"
                             android:paddingTop="6dp"
-                            android:text="@string/controls_background_title"
+                            android:text="@string/controls_listen_title"
                             android:textSize="12sp"/>
 
                         <TextView
                             android:id="@+id/detail_controls_popup"
                             android:layout_width="80dp"
-                            android:layout_height="55dp"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:background="?attr/selectableItemBackgroundBorderless"
@@ -383,7 +383,7 @@
                         <TextView
                             android:id="@+id/detail_controls_download"
                             android:layout_width="80dp"
-                            android:layout_height="55dp"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:background="?attr/selectableItemBackgroundBorderless"
@@ -395,6 +395,23 @@
                             android:paddingBottom="6dp"
                             android:paddingTop="6dp"
                             android:text="@string/download"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/detail_controls_donate"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/controls_download_desc"
+                            android:drawableTop="?attr/donate"
+                            android:gravity="center"
+                            android:paddingBottom="6dp"
+                            android:paddingTop="6dp"
+                            android:text="@string/donate"
                             android:textSize="12sp"/>
 
                     </LinearLayout>
